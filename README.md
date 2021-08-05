@@ -1,8 +1,10 @@
 # DMM VR Connect SDK
 DMM VR Connect SDKはDMM VR Connectと連携して、ゲーム内でのアバター読み出しと配信機能が利用できるUnity Packageです。  
 
-追加アセットがなくてもとりあえずVRMを表示することができる状態にしたversionです。
+**※追加アセットがなくてもとりあえずVRMを表示することができる状態にしたversionです。**
 
+
+----
 
 # 内容物
 各必要アセットに記載のバージョンは動作確認済みバージョンです。  
