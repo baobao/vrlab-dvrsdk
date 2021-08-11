@@ -7,6 +7,8 @@ namespace DVRSDK.Test
         [SerializeField]
         private DMMVRConnectUI dmmVRConnectUI;
 
+        [SerializeField] private RuntimeAnimatorController _controller;
+
         private void Awake()
         {
             dmmVRConnectUI.OnAvatarLoadedAction += OnAvatarLoaded;
@@ -16,6 +18,12 @@ namespace DVRSDK.Test
         {
             dmmVRConnectUI.ShowVRM();
             dmmVRConnectUI.AddAutoBlink();
+            
+            Debug.Log(model, model);
+
+            // アバターロード後指定のアニメーションを再生する
+            var animator = model.GetComponent<Animator>();
+            animator.runtimeAnimatorController = _controller;
         }
     }
 }
